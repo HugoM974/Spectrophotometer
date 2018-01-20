@@ -13,7 +13,7 @@ Ce projet est réalisé dans le cadre de la formation de prépa intégrée de Po
 <h2>Matériel requis</h2>
 <ul><li>Prisme en verre flint</li>
   <li>Source de lumière</li>
-  <li>Carte Arduino</li>
+  <li>Carte <a href="https://www.arduino.cc/">Arduino</a></li>
   <li>Barre de photodiodes (dispositif:TSL1406)</li>
   <li>Socle de regroupement des composants</li>
   <li>[...]</li></ul>
