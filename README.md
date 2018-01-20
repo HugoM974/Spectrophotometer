@@ -5,4 +5,4 @@
 Ce projet est réalisé dans le cadre de la formation de prépa intégrée de Polytech'Nice Sophia
 <h1>Projet Arduino PEIP2 2017/2018</h1>
 <h1>Spectrophotometer</h1>
-<p>Projet réalisé par Hugo MARQUETTE avec l'aide des encadrants <a href="http://users.polytech.unice.fr/~pmasson/Enseignement-arduino.htm" Pascal MASSON></a> et Fabien Ferrero 
+<p>Projet réalisé par Hugo MARQUETTE avec l'aide des encadrants <a href="http://users.polytech.unice.fr/~pmasson/Enseignement-arduino.htm"> Pascal MASSON</a> et Fabien Ferrero 
