@@ -11,4 +11,9 @@ Ce projet est réalisé dans le cadre de la formation de prépa intégrée de Po
 <h2>Description</h2>
 <p>Je vais donc créer un spectrophotomètre qui, par le biais de la dispersion de la lumière, va permettre d'identifier un composant inconnu. Ce projet liera donc de l'électronique, de l'informatique mais aussi de l'optique (spectre de lumière, prisme, etc...).<br/>Une lumière sera envoyée sur un prisme pour ensuite atteindre un écran qui grâce à Arduino pourra afficher le spectre lumineux obtenu.</p>
 <h2>Matériel requis</h2>
-<p>-Prisme en verre flint<br/>-Source de lumière<br/>-Carte Arduino<br/>-Barre de photodiodes (dispositif:TSL1406)<br/>-Socle de regroupement des composants<br/>-[...]<p>
+<ul><li>Prisme en verre flint</li>
+  <li>Source de lumière</li>
+  <li>Carte Arduino</li>
+  <li>Barre de photodiodes (dispositif:TSL1406)</li>
+  <li>Socle de regroupement des composants</li>
+  <li>[...]</li></ul>
