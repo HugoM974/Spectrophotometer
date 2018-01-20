@@ -17,3 +17,5 @@ Ce projet est réalisé dans le cadre de la formation de prépa intégrée de Po
   <li>Barre de photodiodes (dispositif:TSL1406)</li>
   <li>Socle de regroupement des composants</li>
   <li>[...]</li></ul>
+<h2>Aide humanitaire</h2>
+<p>Initialement, ce projet aura pour cible les endroits du monde où règne insalubrité et mauvaise hygiène de vie. En effet grâce au spectrophotomètre, on pourra détecter la pollution présente.</p>
