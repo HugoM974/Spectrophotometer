@@ -6,3 +6,5 @@ Ce projet est réalisé dans le cadre de la formation de prépa intégrée de Po
 <h1>Projet Arduino PEIP2 2017/2018</h1>
 <h1>Spectrophotometer</h1>
 <p>Projet réalisé par Hugo MARQUETTE avec l'aide des encadrants <a href="http://users.polytech.unice.fr/~pmasson/Enseignement-arduino.htm"> Pascal MASSON</a> et <a href="http://users.polytech.unice.fr/~ferrero/Stage/Stage.html">Fabien FERRERO</a></p> 
+<h2>Pourquoi ce choix ?</h2>
+<p>J'ai décidé de ce projet suite à la migration des musulmans, fuyant la Birmanie. En effet, j'ai lu un arcticles disant que les Rohingyas vivaient dans la misère et qu'une grande partie de leur eau était contaminé. Ayant toujours voulu travailler sur des projets aidant autrui à avoir un meilleur mode de vie, j'ai donc pensé initialement à faire un purificateur d'eau, mais au final je me suis orienté sur un spectrophotomètre qui, en guise d'application, pourra servir à fabriquer ce purificateur d'eau.</p>
