@@ -9,11 +9,11 @@ Ce projet est réalisé dans le cadre de la formation de prépa intégrée de Po
 <h2>Pourquoi ce choix ?</h2>
 <p>J'ai décidé de ce projet suite à la migration des musulmans, fuyant la Birmanie. En effet, j'ai lu un arcticles disant que les <a href="https://fr.wikipedia.org/wiki/Rohingya">Rohingyas</a> vivaient dans la misère et qu'une grande partie de leur eau était contaminé. Ayant toujours voulu travailler sur des projets aidant autrui à avoir un meilleur mode de vie, j'ai donc pensé initialement à faire un purificateur d'eau, mais au final je me suis orienté sur un spectrophotomètre qui, en guise d'application, pourra servir à fabriquer ce purificateur d'eau.</p>
 <h2>Description</h2>
-<p>Je vais donc créer un spectrophotomètre qui, par le biais de la dispersion de la lumière, va permettre d'identifier un composant inconnu. Ce projet liera donc de l'électronique, de l'informatique mais aussi de l'optique (spectre de lumière, prisme, etc...).<br/>Une lumière sera envoyée sur un prisme pour ensuite atteindre un écran qui grâce à Arduino pourra afficher le spectre lumineux obtenu.</p>
+<p>Je vais donc créer un spectrophotomètre qui, par le biais de la dispersion de la lumière, va permettre d'identifier un composant inconnu. Ce projet liera donc de l'électronique, de l'informatique mais aussi de l'optique (spectre de lumière, prisme, etc...).<br/>Une lumière sera envoyée sur un prisme pour ensuite atteindre un écran qui grâce à <a href="https://www.arduino.cc/">Arduino</a> pourra afficher le spectre lumineux obtenu.</p>
 <h2>Matériel requis</h2>
 <ul><li>Prisme en verre flint</li>
   <li>Source de lumière</li>
-  <li>Carte <a href="https://www.arduino.cc/">Arduino</a></li>
+  <li>Carte Arduino</li>
   <li>Barre de photodiodes (dispositif:TSL1406)</li>
   <li>Socle de regroupement des composants</li>
   <li>[...]</li></ul>
