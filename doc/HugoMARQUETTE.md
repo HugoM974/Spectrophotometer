@@ -11,3 +11,9 @@ Cahier de suivi du projet de Hugo Marquette
 <p>Du fait du manque du matériel nécessaire au bont fonctionnement du projet, je n'ai pu avancer sur le plan électronique et informatique durant cette séance. J'ai donc passé la plupart du temps à chercher la meilleure façon de pouvoir fixer tous mes composants, j'ai commencé la découpe d'un carton comme premier "socle", mais pour l'instant cette idée reste en suspens.</p>
 <li>Séance du 06 février 2018</li>
 <p>J'ai eu la chance durant cette séance d'être accompagné de Mr.Lorenzini, un collègue de Mr.Masson et Mr.Ferrero. Il m'a permis d'éclaircir une grande partie des points sombres de mon projet. De plus, il m'a aider dans l'obtention d'un spectre lumineux de bonne qualité et m'a proposé du meilleur matériel afin d'obtenir un spectre plus détaillé sur l'ordinateur.</p>
+<li>Séance du 22 février 2018</li>
+<p>Cette séance fut assez laborieuse, ayant besoin d'afficher le traitement du spectre lumineux sur l'ordinateur via l'Arduino, il faut que j'utilise pour ce faire le langage de programmation "Processing", je me suis inspiré d'un code sur Internet, en vain, il m'était impossible de faire fonctionner mon programme à cause d'un problème de "Ports".</p>
+<li>Séance du 15 mars 2018</li>
+<p>Avec Mr.Lorenzini, nous avons essayé de faire fonctionner le programme Processing pendant 1h30 avec ma carte Arduino, il y avait toujours ce problème de "Ports". Au final, Mr.Masson m'a donner une carte Arduino Uno qui est légèrement différente de la Xplained Mini que nous utilisons et le programme Processing s'est mis à marcher avec la nouvelle carte à la fin du cours, comme par miracle. J'ai pu donc voir le spectre lumineux que le TSL401R peut capter.</p>
+
+
