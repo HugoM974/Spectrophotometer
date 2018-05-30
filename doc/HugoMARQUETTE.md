@@ -15,5 +15,13 @@ Cahier de suivi du projet de Hugo Marquette
 <p>Cette séance fut assez laborieuse, ayant besoin d'afficher le traitement du spectre lumineux sur l'ordinateur via l'Arduino, il faut que j'utilise pour ce faire le langage de programmation "Processing", je me suis inspiré d'un code sur Internet, en vain, il m'était impossible de faire fonctionner mon programme à cause d'un problème de "Ports".</p>
 <li>Séance du 15 mars 2018</li>
 <p>Avec Mr.Lorenzini, nous avons essayé de faire fonctionner le programme Processing pendant 1h30 avec ma carte Arduino, il y avait toujours ce problème de "Ports". Au final, Mr.Masson m'a donner une carte Arduino Uno qui est légèrement différente de la Xplained Mini que nous utilisons et le programme Processing s'est mis à marcher avec la nouvelle carte à la fin du cours, comme par miracle. J'ai pu donc voir le spectre lumineux que le TSL401R peut capter.</p>
-
-
+<li>Séance du 27 mars 2018</li>
+<p>Cette séance n'a pas été très fructueuse, en effet ayant enfin pu voir une représentation d'un spectre lumineux sur l'ordinateur pour le TSL401R, je me suis attaqué au TSLO406R, cette fois-ci, cela a été beaucoup plus difficile du fait de la complexité de ce dernier par rapport à l'ancien dispositif</p>
+<li>Séance du 04 avril 2018</li>
+<p>J'ai passé toute la séance à essayé de faire fonctionner le TSL406R, cela a été laborieux mais au final j'ai pu obtenir un spectre de qualité assez médiocre</p>
+<li>Séance du 17 avril 2018</p>
+<p>J'ai essayé de passer la séance à améliorer le spectre du TSL406R obtenu sur l'ordi, mais cela a été non concluant du fait de la complexité du programme procesing en ma disposition. L'informatique est en quelque sorte ma bête noire.</p>
+<li>Séance du 02 mai 2018</li>
+<p>Cette séance ne m'a rien apporté en plus sur le plan informatique, j'ai néanmoins pu aviser quant à la conception de la boite du spectrophotomètre.</p>
+<li>Séance du 07 mai 2018</li>
+<p>J'ai passé toute la séance à essayer de faire marcher un module Bluetooth, mais cela n'a pas abouti malheureusement.</p>
