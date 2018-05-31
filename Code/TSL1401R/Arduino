@@ -1,0 +1,106 @@
+/*TSL201R_Scanning.ino Arduining 26 MAR 2014
+
+-Reading only one pixel in each scan.
+-The image is completed after 1+64 scans.(first is discarded)
+-First scan is repeated to permit a complete integration period). 
+-Pixel integration Period is adjustable (potentiometer in analog channel 1).
+
+*/
+#include <SoftwareSerial.h>  //Software Serial Port  
+#define RxD 11    //Pin 11 pour RX, PB2 sur votre board, a brancher sur le TX du HC-06
+#define TxD 10    //Pin 10 pour TX, PB3 sur votre board, a brancher sur le RX du HC-06
+SoftwareSerial bluetooth(RxD,TxD);
+#define CLK     2
+#define SI      3
+#define VOUT    0   //pixel intensity in the analog channel 0
+#define INTVAL  1   //integration time adjust in the analog channel 1.
+#define PIXELS  64
+
+int intDelay;      //Integration Period = (intDelay + 535 ) microseconds.
+int Value;         //pixel intensity value.
+int a;
+
+void setup(){ 
+  // Configuration du bluetooth
+  /*pinMode(RxD, INPUT);
+  pinMode(TxD, OUTPUT);
+  BTSerie.begin(9600);
+  delay(100);*/
+  
+  pinMode(CLK, OUTPUT);
+  pinMode(SI, OUTPUT);
+  digitalWrite(CLK, LOW);
+  digitalWrite(SI, LOW);
+
+//  Serial.begin(9600);
+  bluetooth.begin(115200);
+  Serial.begin(115200);
+  Serial.flush();
+}
+
+
+
+void loop(){
+  intDelay=1+analogRead(INTVAL)*10;  //read integration time from potentiometer.
+  Serial.print(">");                //Mark the start of a new frame
+  Serial.println(intDelay + 535);   //Send Integration Period in microseconds.
+  //a=intDelay+535;
+ // delay(8);     // used with 9600 bauds
+  delay(2);     // used with 115200 bauds
+
+  readPixel(0);                     //the first reading will be discarded.
+ delayMicroseconds(intDelay);
+
+  for(int i=0;i<PIXELS;i++){
+    readPixel(i);
+    delayMicroseconds(intDelay);    //Delay added to the integration period.
+  }
+  if(Serial.available()){
+    bluetooth.write("*G");
+    bluetooth.write(Serial.read());
+    bluetooth.write("*");
+    delay(100);
+  }
+ // delay(100);
+}
+
+/*char recvChar;  
+  //On lit caractere par caractere sur le BTSerie et on affiche sur le Terminal Serie  
+  if (BTSerie.available()) {  
+    recvChar = BTSerie.read(); //lecture  
+    Serial.print(recvChar);  //ecriture
+  }  
+  //On lit caractere par caractere sur le terminal et on affiche sur le BT Serie 
+  if (Serial.available()) {  
+    recvChar = Serial.read(); //lecture
+    BTSerie.write(recvChar);  //ecriture
+  }  */
+
+//------------------ Send the intensity of the pixel serially -----------------
+void readPixel(int pixel){
+  digitalWrite(CLK, LOW);
+  digitalWrite(SI, HIGH);         
+  digitalWrite(CLK, HIGH);
+  digitalWrite(SI, LOW);
+ 
+
+  for(int i=0;i<pixel; i++){    //Clock pulses before pixel reading
+    digitalWrite(CLK, LOW);
+    digitalWrite(CLK, HIGH);    //Select next pixel and reset integrator of actual pixel.
+  }
+
+  Value = analogRead(VOUT);
+ 
+  Serial.print("i= ");
+   if (pixel<10)Serial.print("0");
+  Serial.print(pixel);
+   Serial.print("   int= ");
+   if (Value<100) Serial.print("0");
+  Serial.println(Value);
+//  delay(8);       //used with 9600 bauds
+  delay(1);         //used with 115200 bauds
+  for(int i=0;i<=(PIXELS-pixel); i++){    //Clock pulses after pixel reading.
+    digitalWrite(CLK, LOW);
+    digitalWrite(CLK, HIGH);    //Select next pixel and reset integrator of actual pixel.
+  }
+ }
